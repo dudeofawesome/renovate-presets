@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.format.enable": false,
+  "javascript.format.enable": false,
+
+  "yaml.schemas": {
+    "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": [
+      ".gitlab-ci.y{,a}ml",
+      ".gitlab/ci/**.y{,a}ml"
+    ]
+  },
+
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never"
+  }
+}

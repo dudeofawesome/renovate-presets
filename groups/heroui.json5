@@ -1,0 +1,20 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      groupName: 'HeroUI',
+      groupSlug: 'heroui',
+      commitMessageTopic: 'HeroUI',
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // heroui packages
+        '@heroui/**',
+        '@nextui-org/**',
+        // 3rd-party packages
+        'next-themes',
+        'framer-motion',
+      ],
+    },
+  ],
+}

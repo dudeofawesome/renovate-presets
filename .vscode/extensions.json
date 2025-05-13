@@ -1,0 +1,9 @@
+// A list of recommended extensions for this workspace.
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+  ]
+}

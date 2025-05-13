@@ -1,0 +1,19 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      commitMessageTopic: 'Vitest & Effect',
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // effect packages
+        'effect',
+        '@effect/vitest',
+        // vite packages
+        'vitest',
+        '@vitest/**',
+        'vite-tsconfig-paths',
+      ],
+    },
+  ],
+}

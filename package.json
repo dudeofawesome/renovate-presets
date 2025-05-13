@@ -1,0 +1,10 @@
+{
+  "name": "renovate-presets",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@code-style/code-style": "^2.0.0-32"
+  }
+}

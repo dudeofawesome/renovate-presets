@@ -1,0 +1,22 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      commitMessageTopic: 'Effect SQL',
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // effect-ts packages
+        'effect',
+        '@effect/sql-**',
+        // drizzle packages
+        'drizzle-orm',
+        'drizzle-kit',
+        // drivers
+        'postgres',
+        'pg',
+        '@types/pg',
+      ],
+    },
+  ],
+}

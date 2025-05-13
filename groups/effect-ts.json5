@@ -1,0 +1,19 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      groupName: 'Effect',
+      groupSlug: 'effect',
+      commitMessageTopic: 'Effect',
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // effect-ts packages
+        'effect',
+        '@effect/**',
+        // 3rd-party packages
+        '@effect-aws/**',
+      ],
+    },
+  ],
+}
