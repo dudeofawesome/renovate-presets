@@ -5,6 +5,7 @@
     {
       groupName: 'Effect',
       groupSlug: 'effect',
+      prPriority: 0,
       commitMessageTopic: 'Effect',
       matchDatasources: ['npm'],
       matchPackageNames: [

@@ -5,6 +5,7 @@
     {
       commitMessageTopic: 'Effect SQL',
       matchDatasources: ['npm'],
+      prPriority: 1,
       matchPackageNames: [
         // effect-ts packages
         'effect',

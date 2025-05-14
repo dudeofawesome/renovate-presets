@@ -5,6 +5,7 @@
     {
       commitMessageTopic: 'Vitest & Effect',
       matchDatasources: ['npm'],
+      prPriority: 1,
       matchPackageNames: [
         // effect packages
         'effect',
