@@ -1,0 +1,15 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  description: 'NextUI was renamed to HeroUI.',
+
+  packageRules: [
+    {
+      matchDatasources: ['npm'],
+      matchPackageNames: ['@nextui-org/**'],
+      replacementNameTemplate: "{{{replace '@nextui-org\/' '@heroui\/' packageName}}}",
+      matchCurrentVersion: '>=2.0.0 <3.0.0',
+      replacementVersionTemplate: "{{ lookup (split currentValue '.') 0 }}",
+    },
+  ],
+}
