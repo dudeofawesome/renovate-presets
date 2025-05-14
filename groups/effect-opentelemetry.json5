@@ -1,0 +1,18 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      commitMessageTopic: 'Effect OpenTelemetry',
+      matchDatasources: ['npm'],
+      prPriority: 1,
+      matchPackageNames: [
+        // effect-ts packages
+        'effect',
+        '@effect/opentelemetry',
+        // OpenTelemetry packages
+        '@opentelemetry/**',
+      ],
+    },
+  ],
+}
