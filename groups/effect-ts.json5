@@ -5,15 +5,30 @@
     {
       groupName: 'Effect',
       groupSlug: 'effect',
-      prPriority: 0,
+      prPriority: 10,
       commitMessageTopic: 'Effect',
       matchDatasources: ['npm'],
       matchPackageNames: [
         // effect-ts packages
         'effect',
         '@effect/**',
-        // 3rd-party packages
+
+        /* === 3rd-party Effect packages === */
         '@effect-aws/**',
+
+        /* === dependencies === */
+        // OpenTelemetry packages
+        '@opentelemetry/**',
+        // drizzle packages
+        'drizzle-orm',
+        'drizzle-kit',
+        // DB drivers
+        'postgres',
+        'mysql2',
+        // vite packages
+        'vitest',
+        '@vitest/**',
+        'vite-tsconfig-paths',
       ],
     },
   ],
