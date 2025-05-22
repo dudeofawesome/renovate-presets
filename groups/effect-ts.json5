@@ -16,7 +16,7 @@
         /* === 3rd-party Effect packages === */
         '@effect-aws/**',
 
-        /* === dependencies === */
+        /* === peer dependencies === */
         // OpenTelemetry packages
         '@opentelemetry/**',
         // drizzle packages
@@ -30,6 +30,7 @@
         '@vitest/**',
         'vite-tsconfig-paths',
       ],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
     },
   ],
 }

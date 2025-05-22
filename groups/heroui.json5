@@ -5,16 +5,18 @@
     {
       groupName: 'HeroUI',
       groupSlug: 'heroui',
+      prPriority: 10,
       commitMessageTopic: 'HeroUI',
       matchDatasources: ['npm'],
       matchPackageNames: [
         // heroui packages
         '@heroui/**',
         '@nextui-org/**',
-        // 3rd-party packages
+        // peer dependencies
         'next-themes',
         'framer-motion',
       ],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
     },
   ],
 }

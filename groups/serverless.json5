@@ -5,14 +5,16 @@
     {
       groupName: 'Serverless',
       groupSlug: 'sls',
+      prPriority: 10,
       commitMessageTopic: 'Serverless',
       matchDatasources: ['npm'],
       matchPackageNames: [
         // primary package
         'serverless',
-        // other packages
+        // plugins
         'serverless-**',
       ],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
     },
   ],
 }
