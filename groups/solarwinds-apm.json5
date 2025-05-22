@@ -1,0 +1,20 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      groupName: 'SolarWinds APM',
+      groupSlug: 'solarwinds-apm',
+      prPriority: 10,
+      commitMessageTopic: 'SolarWinds APM',
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // primary package
+        'solarwinds-apm',
+        // bindings
+        '@solarwinds-apm/**',
+      ],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
+    },
+  ],
+}
