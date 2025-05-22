@@ -1,0 +1,21 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      groupName: 'Code Style',
+      groupSlug: 'code-style',
+      prPriority: 10,
+      commitMessageTopic: 'Code Style',
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // primary packages
+        '@code-style/**',
+        // peer dependencies
+        'concurrently',
+        'glob',
+      ],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
+    },
+  ],
+}
