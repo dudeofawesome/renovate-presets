@@ -1,0 +1,15 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  extends: ['github>dudeofawesome/renovate-presets//groups/nix.json5'],
+
+  packageRules: [
+    {
+      groupName: 'Nix',
+      groupSlug: 'nix registries',
+      commitMessageTopic: 'Nix',
+      matchManagers: ['nix'],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
+    },
+  ],
+}
