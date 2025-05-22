@@ -1,0 +1,20 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      groupName: 'ESLint',
+      groupSlug: 'eslint',
+      prPriority: 5,
+      commitMessageTopic: 'ESLINT',
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // primary package
+        'eslint',
+        // plugins
+        'eslint-**',
+      ],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
+    },
+  ],
+}

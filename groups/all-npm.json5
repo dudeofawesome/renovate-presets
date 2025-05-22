@@ -1,0 +1,17 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      groupName: 'All non-major npm dependencies',
+      groupSlug: 'all-npm',
+      prPriority: 1000,
+      matchDatasources: ['npm'],
+      matchPackageNames: [
+        // all dependencies
+        '**',
+      ],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
+    },
+  ],
+}
