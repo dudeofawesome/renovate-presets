@@ -1,0 +1,60 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  extends: [
+    'config:best-practices',
+
+    // have renovate bot keep the config up-to-date
+    ':configMigration',
+    // enable the dependency dashboard issue
+    ':dependencyDashboard',
+    ':prImmediately',
+    ':rebaseStalePrs',
+    ':semanticCommits',
+
+    ':docker',
+    ':npm',
+    ':gomod',
+
+    // treat Dockerfile vars like NODE_VERSION as versions
+    'customManagers:dockerfileVersions',
+    // treat tfvars like NODE_VERSION as versions
+    'customManagers:tfvarsVersions',
+    // treat env vars like NODE_VERSION in Github workflows as versions
+    'customManagers:githubActionsVersions',
+    // treat env vars like NODE_VERSION in Gitlab pipelines as versions
+    'customManagers:gitlabPipelineVersions',
+
+    // show scorecard on MRs
+    'security:openssf-scorecard',
+
+    // open new MRs on a weekly cadence
+    'schedule:weekly',
+
+    // don't update major versions
+    // ':disableMajorUpdates',
+    ':preserveSemverRanges',
+
+    // enable docker tag analysis
+    'preview:dockerVersions',
+
+    'github>dudeofawesome/renovate-presets//groups/code-style.json5',
+    'github>dudeofawesome/renovate-presets//groups/eslint.json5',
+    'github>dudeofawesome/renovate-presets//groups/serverless.json5',
+
+    'github>dudeofawesome/renovate-presets//languages/nix.json5',
+  ],
+
+  branchPrefix: 'chore/update/',
+
+  // undo `:pinDevDependencies` from `config:best-practices`
+  packageRules: [
+    {
+      matchDepTypes: ['devDependencies', 'dev-dependencies', 'dev'],
+      rangeStrategy: 'auto',
+    },
+  ],
+
+  // match gitlab pipelines versions
+  // customManagers: [],
+}
