@@ -3,6 +3,8 @@
 
   packageRules: [
     {
+      // TODO: improve summary "fix(deps): update effect (major)"
+
       groupName: 'Effect',
       groupSlug: 'effect',
       prPriority: 10,

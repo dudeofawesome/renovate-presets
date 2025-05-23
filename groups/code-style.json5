@@ -3,6 +3,8 @@
 
   packageRules: [
     {
+      // TODO: improve summary "chore(deps): update code style to v11.0.2"
+
       groupName: 'Code Style',
       groupSlug: 'code-style',
       prPriority: 10,

@@ -18,7 +18,7 @@
 
     // treat Dockerfile vars like NODE_VERSION as versions
     'customManagers:dockerfileVersions',
-    // treat tfvars like NODE_VERSION as versions
+    // treat tfvars like node_version as versions
     'customManagers:tfvarsVersions',
     // treat env vars like NODE_VERSION in Github workflows as versions
     'customManagers:githubActionsVersions',

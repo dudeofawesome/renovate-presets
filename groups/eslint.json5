@@ -3,10 +3,12 @@
 
   packageRules: [
     {
+      // TODO: improve summary "chore(deps): update eslint to v6"
+
       groupName: 'ESLint',
       groupSlug: 'eslint',
       prPriority: 5,
-      commitMessageTopic: 'ESLINT',
+      commitMessageTopic: 'ESLint',
       matchDatasources: ['npm'],
       matchPackageNames: [
         // primary package
