@@ -3,11 +3,19 @@
 
   packageRules: [
     {
-      groupName: 'Nix',
-      groupSlug: 'nix registries',
+      groupName: 'Nix registries',
+      groupSlug: 'nix',
       commitMessageTopic: 'Nix',
       matchManagers: ['nix'],
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      matchUpdateTypes: [
+        'major',
+        'minor',
+        'patch',
+        'pin',
+        'digest',
+        'pinDigest',
+        'lockFileMaintenance',
+      ],
     },
   ],
 }
