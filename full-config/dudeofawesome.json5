@@ -24,6 +24,8 @@
     'customManagers:githubActionsVersions',
     // treat env vars like NODE_VERSION in Gitlab pipelines as versions
     'customManagers:gitlabPipelineVersions',
+    // treat `appVersion` values in `Chart.yaml` files as versions
+    'customManagers:helmChartYamlAppVersions',
 
     // show scorecard on MRs
     'security:openssf-scorecard',
