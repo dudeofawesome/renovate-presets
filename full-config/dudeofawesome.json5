@@ -45,15 +45,12 @@
     'github>dudeofawesome/renovate-presets//languages/nix.json5',
   ],
 
-  branchPrefix: 'chore/update/',
-
+  ignorePresets: [
   // undo `:pinDevDependencies` from `config:best-practices`
-  packageRules: [
-    {
-      matchDepTypes: ['devDependencies', 'dev-dependencies', 'dev'],
-      rangeStrategy: 'auto',
-    },
+    ':pinDevDependencies',
   ],
+
+  branchPrefix: 'chore/update/',
 
   // match gitlab pipelines versions
   // customManagers: [],
