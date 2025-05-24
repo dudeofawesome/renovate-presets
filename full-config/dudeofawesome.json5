@@ -11,6 +11,8 @@
     ':prImmediately',
     ':rebaseStalePrs',
     ':semanticCommits',
+    // enable the upgrade safety confidence badge
+    'mergeConfidence:all-badges',
 
     ':docker',
     ':npm',
@@ -48,7 +50,7 @@
   ],
 
   ignorePresets: [
-  // undo `:pinDevDependencies` from `config:best-practices`
+    // undo `:pinDevDependencies` from `config:best-practices`
     ':pinDevDependencies',
   ],
 
