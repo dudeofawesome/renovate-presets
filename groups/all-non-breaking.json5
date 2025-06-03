@@ -1,0 +1,17 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    {
+      description: 'Group non-breaking updates',
+      matchUpdateTypes: [
+        'minor',
+        'patch',
+        'digest',
+        // 'lockFileMaintenance'
+      ],
+      matchJsonata: ['isBreaking != true'],
+      groupName: 'Non-breaking updates',
+    },
+  ],
+}
