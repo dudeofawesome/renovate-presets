@@ -16,7 +16,15 @@
         'next-themes',
         'framer-motion',
       ],
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      matchUpdateTypes: [
+        'major',
+        'minor',
+        'patch',
+        'pin',
+        'replacement',
+        'bump',
+        'lockFileMaintenance',
+      ],
     },
   ],
 }

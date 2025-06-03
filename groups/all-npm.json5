@@ -11,7 +11,14 @@
         // all dependencies
         '**',
       ],
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      matchUpdateTypes: [
+        'major',
+        'minor',
+        'patch',
+        'pin',
+        'bump',
+        'lockFileMaintenance',
+      ],
     },
   ],
 }
