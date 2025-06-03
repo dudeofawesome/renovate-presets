@@ -18,16 +18,18 @@
     ':npm',
     ':gomod',
 
-    // treat Dockerfile vars like NODE_VERSION as versions
+    // look for annotated ENVs / VARs like `NODE_VERSION` in Dockerfiles
     'customManagers:dockerfileVersions',
-    // treat tfvars like node_version as versions
+    // look for annotated tfvars like `node_version`
     'customManagers:tfvarsVersions',
-    // treat env vars like NODE_VERSION in Github workflows as versions
+    // look for annotated properties like `NODE_VERSION` in Github workflows
     'customManagers:githubActionsVersions',
-    // treat env vars like NODE_VERSION in Gitlab pipelines as versions
+    // look for annotated properties like `NODE_VERSION` in Gitlab pipelines
     'customManagers:gitlabPipelineVersions',
-    // treat `appVersion` values in `Chart.yaml` files as versions
+    // look for annotated `appVersion` values in `Chart.yaml` files
     'customManagers:helmChartYamlAppVersions',
+    // look for annotated properties like `runtime` in Serverless files
+    'github>dudeofawesome/renovate-presets//custom-managers/serverless.json5',
 
     // show scorecard on MRs
     'security:openssf-scorecard',
