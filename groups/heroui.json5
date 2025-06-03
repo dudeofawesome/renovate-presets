@@ -25,6 +25,10 @@
         'bump',
         'lockFileMaintenance',
       ],
+      separateMajorMinor: false,
+      separateMinorPatch: false,
+      separateMultipleMajor: false,
+      rangeStrategy: 'replace',
     },
   ],
 }
