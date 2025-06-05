@@ -16,6 +16,8 @@
         'next-themes',
         'framer-motion',
       ],
+
+      // group all package updates together
       matchUpdateTypes: [
         'major',
         'minor',

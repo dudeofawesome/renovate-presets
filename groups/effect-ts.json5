@@ -32,7 +32,21 @@
         '@vitest/**',
         'vite-tsconfig-paths',
       ],
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+
+      // group all package updates together
+      matchUpdateTypes: [
+        'major',
+        'minor',
+        'patch',
+        'pin',
+        'replacement',
+        'bump',
+        'lockFileMaintenance',
+      ],
+      separateMajorMinor: false,
+      separateMinorPatch: false,
+      separateMultipleMajor: false,
+      rangeStrategy: 'replace',
     },
   ],
 }
