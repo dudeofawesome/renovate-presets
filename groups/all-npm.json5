@@ -11,6 +11,8 @@
         // all dependencies
         '**',
       ],
+
+      // group all package updates together
       matchUpdateTypes: [
         'major',
         'minor',
@@ -19,6 +21,10 @@
         'bump',
         'lockFileMaintenance',
       ],
+      separateMajorMinor: false,
+      separateMinorPatch: false,
+      separateMultipleMajor: false,
+      rangeStrategy: 'replace',
     },
   ],
 }
